@@ -1,0 +1,2345 @@
+                                .banner__slider {
+                                    @media (min-width: 1200px) {
+                                        .slider, .slide {
+                                            height: 746px;
+                                        }
+                                    }
+                                    padding-bottom: 20px;
+                                    .slick-arrow {
+                                        position: absolute;
+                                        left: 54%;
+                                        bottom: 0;
+                                        &.slick-prev {
+                                            background-color: #fff !important;
+                                            border: 0;
+                                            opacity: 1 !important;
+                                            left: unset;
+                                            width: 125px;
+                                            right: 128px;
+                                            height: 109px;
+                                            z-index: 9;
+                                            font-size: 0;
+                                            background-image: url(../images/left.png);
+                                            background-repeat: no-repeat;
+                                            background-size: 19px;
+                                            background-position: center;
+                                        }
+                                        &.slick-next {
+                                            background-color: #fff !important;
+                                            border: 0;
+                                            opacity: 1 !important;
+                                            left: unset;
+                                            width: 125px;
+                                            right: 0;
+                                            height: 109px;
+                                            margin-left: 13px;
+                                            font-size: 0;
+                                            background-image: url(../images/right.png);
+                                            background-repeat: no-repeat;
+                                            background-size: 19px;
+                                            background-position: center;
+                                        }
+                                    }
+                                    @media screen and (min-width: 992px) and (max-width:1200px) {
+                                        .slider,
+                                        .slide {
+                                            height: 60vh;
+                                        }
+                                    }
+                                    .slide {
+                                        position: relative;
+                                    }
+                                    .slide .slide__img {
+                                        width: 100%;
+                                        height: auto;
+                                        overflow: hidden;
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: linear-gradient(361deg, rgb(0 0 0 / 34%) 78%, #000 100%);
+                                            top: 0;
+                                        }
+                                    }
+                                    @media (min-width: 992px) {
+                                        .slide .slide__img {
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 0;
+                                            -webkit-transform: translateY(-50%);
+                                            transform: translateY(-50%);
+                                            height: 100%;
+                                        }
+                                    }
+                                    .slide .slide__img img {
+                                        max-width: 100%;
+                                        height: 100%;
+                                        width: 100%;
+                                        object-fit: cover;
+                                        opacity: .7 !important;
+                                        -webkit-animation-duration: 3s;
+                                        animation-duration: 3s;
+                                        -webkit-transition: all 1s ease;
+                                        transition: all 1s ease;
+                                    }
+                                    .slide .slide__content {
+                                        position: absolute;
+                                        top: unset;
+                                        left: 0;
+                                        -webkit-transform: translate(-50%, -50%);
+                                        transform: translate(0, 0);
+                                        width: 100%;
+                                        padding-top: 0;
+                                        bottom: 0;
+                                        @include for-desktop {
+                                            padding-top: 0px;
+                                            display: none;
+                                        }
+                                    }
+                                    .search__section {
+                                        position: static;
+                                        top: 0;
+                                        left: 0;
+                                        transform: unset;
+                                        width: 100%;
+                                        z-index: 99;
+                                        box-shadow: 0px 19px 31px rgb(0 0 0 / 5%);
+                                        h3 {
+                                            font-size: 32px;
+                                            text-align: center;
+                                            color: #fff;
+                                            font-weight: 700;
+                                            padding-bottom: 23px;
+                                        }
+                                        .srcB {
+                                            max-width: 100%;
+                                            margin: 0px auto;
+                                            -webkit-transition: all 0.4s;
+                                            transition: all 0.4s;
+                                            display: -webkit-box;
+                                            display: -ms-flexbox;
+                                            display: flex;
+                                            -ms-flex-wrap: wrap;
+                                            flex-wrap: wrap;
+                                            -webkit-column-gap: 30px;
+                                            -moz-column-gap: 30px;
+                                            column-gap: 30px;
+                                            background-color: #ffff;
+                                            padding: 22px 41px;
+                                            border-radius: 23px;
+                                            padding: 0px 113px;
+                                            padding-bottom: 22px;
+                                            .fld {
+                                                padding-bottom: 15px;
+                                                .head {
+                                                    font-size: 13px;
+                                                    width: 100%;
+                                                    padding-bottom: 17px;
+                                                    font-weight: 600;
+                                                    color: #6c6c6c;
+                                                }
+                                                &.property-type {
+                                                    .dd-search {
+                                                        display: none;
+                                                    }
+                                                }
+                                                .dropdown-select .dd-searchbox {
+                                                    width: 100%;
+                                                    padding: 0px 0px;
+                                                    border: 1px solid #999;
+                                                    border-color: #999;
+                                                    border-radius: 4px;
+                                                    outline: none;
+                                                    height: 32px;
+                                                    padding-left: 10px;
+                                                }
+                                                .dropdown-select {
+                                                    background-color: unset;
+                                                    background-image: unset;
+                                                    border-bottom: 1px solid #cfcfcf;
+                                                    border-radius: 0;
+                                                    padding: 0 0px;
+                                                }
+                                                .dropdown-select span {
+                                                    color: #000;
+                                                    display: inline-block;
+                                                    padding: 4px 0px 6px;
+                                                    font-weight: 700;
+                                                }
+                                                .dropdown-select:after {
+                                                    height: 0;
+                                                    width: 0;
+                                                    -webkit-transform: origin(50% 20%);
+                                                    transform: origin(50% 20%);
+                                                    transition: all 0.125s ease-in-out;
+                                                    content: "";
+                                                    display: block;
+                                                    margin-top: -2px;
+                                                    pointer-events: none;
+                                                    position: absolute;
+                                                    right: 10px;
+                                                    top: 50%;
+                                                    width: 10px;
+                                                    height: 10px;
+                                                    border-bottom: 2px solid #000;
+                                                    border-right: 2px solid #000;
+                                                    transform: rotate(45deg);
+                                                    border-left: unset;
+                                                    border-top: unset;
+                                                }
+                                            }
+                                            .number {
+                                                width: 17%;
+                                                span {
+                                                    cursor: pointer;
+                                                }
+                                                @media screen and (max-width:1520px) {
+                                                    width: 15%;
+                                                }
+                                                .inner-count {
+                                                    display: -webkit-box;
+                                                    display: -ms-flexbox;
+                                                    display: flex;
+                                                    -webkit-box-align: center;
+                                                    -ms-flex-align: center;
+                                                    align-items: center;
+                                                    gap: 21px;
+                                                    border-bottom: 1px solid #cfcfcf;
+                                                    padding-bottom: 13px;
+                                                }
+                                                .minus,
+                                                .plus {
+                                                    width: 32px;
+                                                    height: auto;
+                                                    background: unset;
+                                                    border-radius: 4px;
+                                                    /* padding: 8px 5px 8px 5px; */
+                                                    border: 0px solid #ddd;
+                                                    display: inline-block;
+                                                    /* vertical-align: middle; */
+                                                    text-align: center;
+                                                    color: #bfbfbf;
+                                                    font-size: 33px;
+                                                    line-height: unset;
+                                                }
+                                                input {
+                                                    height: 34px;
+                                                    width: 36px;
+                                                    text-align: center;
+                                                    font-size: 26px;
+                                                    border: 0px solid #ddd;
+                                                    border-radius: 4px;
+                                                    display: inline-block;
+                                                    vertical-align: middle;
+                                                    background-color: unset;
+                                                    color: #000;
+                                                    font-weight: 800;
+                                                    font-size: 24px;
+                                                }
+                                            }
+                                            .prtSr {
+                                                width: 44%;
+                                                float: left;
+                                                input {
+                                                    border: none;
+                                                    height: 48px;
+                                                    border-radius: 5px;
+                                                    padding-right: 50px;
+                                                    background: url(../images/search-white.svg) no-repeat;
+                                                    background-position: 96% 16px;
+                                                    background-color: rgba(255, 255, 255, 0.3);
+                                                    width: 100%;
+                                                    padding-left: 17px;
+                                                    color: #ffff;
+                                                    outline: none;
+                                                }
+                                                 ::-webkit-input-placeholder {
+                                                    color: #fff;
+                                                    font-size: 16px;
+                                                }
+                                                 :-moz-placeholder {
+                                                    font-size: 16px;
+                                                    color: #fff;
+                                                }
+                                                 ::-moz-placeholder {
+                                                    color: #fff;
+                                                    font-size: 16px;
+                                                }
+                                                 :-ms-input-placeholder {
+                                                    color: #fff;
+                                                    font-size: 16px;
+                                                }
+                                            }
+                                            .lcSt {
+                                                width: 28%;
+                                                float: left;
+                                                padding-left: 0;
+                                                select.lcT {
+                                                    display: none;
+                                                }
+                                                &.loc-fld {
+                                                    width: 28%;
+                                                }
+                                            }
+                                            .prtTp {
+                                                width: 28%;
+                                                float: left;
+                                                padding-left: 18px;
+                                                select.lcT {
+                                                    display: none;
+                                                }
+                                                .dd-search {
+                                                    display: none;
+                                                }
+                                            }
+                                            .bdrM {
+                                                width: 26%;
+                                                float: left;
+                                                .ttl {
+                                                    font-size: 16px;
+                                                    color: #fff;
+                                                    margin-bottom: 2px;
+                                                    padding-bottom: 23px;
+                                                }
+                                                .inner-radio {
+                                                    display: flex;
+                                                    justify-content: flex-start;
+                                                    .img_radio {
+                                                        margin-right: 4px;
+                                                    }
+                                                }
+                                                label.img_radio span {
+                                                    width: 37px;
+                                                    height: 37px;
+                                                    border-radius: 50px;
+                                                    display: inline-block;
+                                                    background-color: #ececec;
+                                                    text-align: center;
+                                                    padding: 10px 0px;
+                                                    border: 0px solid #fff;
+                                                    line-height: 18px;
+                                                    color: #6e6e6e;
+                                                    font-weight: 600;
+                                                }
+                                                label.img_radio [type=radio]:checked+span {
+                                                    background-color: #cf252e;
+                                                    color: #ffffff;
+                                                    border-color: #cf252e;
+                                                }
+                                                &.prop-rate {
+                                                    .img_radio {
+                                                        span {
+                                                            width: 60px;
+                                                            height: 30px;
+                                                            border-radius: 5px;
+                                                            display: inline-block;
+                                                            background-color: #ffffff;
+                                                            text-align: center;
+                                                            padding: 10px 0px;
+                                                            border: 1px solid #d3d3d3;
+                                                            line-height: 9px;
+                                                            color: #000000;
+                                                            font-weight: 700;
+                                                            font-size: 11px;
+                                                        }
+                                                        [type=checkbox]:checked+span {
+                                                            background-color: #cf252e;
+                                                            color: #ffffff;
+                                                            border-color: #910e15;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .bath {
+                                                width: 14%;
+                                                float: left;
+                                                padding-top: 56px;
+                                                padding-left: 18px;
+                                                select.lcT {
+                                                    display: none;
+                                                }
+                                                .dd-search {
+                                                    display: none;
+                                                }
+                                            }
+                                            .prpSc {
+                                                width: 14%;
+                                                float: left;
+                                                padding-top: 55px;
+                                                padding-left: 9px;
+                                                select.lcT {
+                                                    display: none;
+                                                }
+                                                .dd-search {
+                                                    display: none;
+                                                }
+                                            }
+                                            .prSc {
+                                                width: 20%;
+                                                float: left;
+                                                padding-top: 0;
+                                                padding-left: 0;
+                                                padding-bottom: 0;
+                                                .price-input {
+                                                    width: 100%;
+                                                    display: -webkit-box;
+                                                    display: -ms-flexbox;
+                                                    display: flex;
+                                                    margin: 14px 0 12px;
+                                                }
+                                                .price-input .field {
+                                                    display: flex;
+                                                    width: 100%;
+                                                    height: 45px;
+                                                    align-items: center;
+                                                }
+                                                .field input {
+                                                    width: 90px;
+                                                    height: 30px;
+                                                    outline: none;
+                                                    font-size: 19px;
+                                                    margin-left: 0;
+                                                    border-radius: 5px;
+                                                    text-align: center;
+                                                    /* border: 1px solid #999; */
+                                                    -moz-appearance: textfield;
+                                                    border: 1px solid #bfbfbf;
+                                                    font-weight: 700;
+                                                    font-size: 11px;
+                                                    text-align: center;
+                                                    color: #858080;
+                                                }
+                                                .field input:focus {
+                                                    border: 1px solid #DE1F1F;
+                                                    color: #000;
+                                                }
+                                                .field input:focus-within {
+                                                    border: 1px solid #DE1F1F;
+                                                    color: #000;
+                                                }
+                                                input[type="number"]::-webkit-outer-spin-button,
+                                                input[type="number"]::-webkit-inner-spin-button {
+                                                    -webkit-appearance: none;
+                                                }
+                                                .price-input .separator {
+                                                    width: 130px;
+                                                    display: flex;
+                                                    font-size: 19px;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                }
+                                                .slider1 {
+                                                    height: 5px;
+                                                    position: relative;
+                                                    background: #ddd;
+                                                    border-radius: 5px;
+                                                }
+                                                .slider1 .progress {
+                                                    height: 100%;
+                                                    left: 25%;
+                                                    right: 25%;
+                                                    position: absolute;
+                                                    border-radius: 5px;
+                                                    background: #CF252E;
+                                                }
+                                                .range-input {
+                                                    position: relative;
+                                                }
+                                                .range-input input {
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    height: 5px;
+                                                    top: -5px;
+                                                    background: none;
+                                                    pointer-events: none;
+                                                    -webkit-appearance: none;
+                                                    -moz-appearance: none;
+                                                }
+                                                 ::selection {
+                                                    color: #fff;
+                                                    background: #CF252E;
+                                                }
+                                                input[type="range"]::-webkit-slider-thumb {
+                                                    height: 17px;
+                                                    width: 17px;
+                                                    border-radius: 50%;
+                                                    background: #fff;
+                                                    pointer-events: auto;
+                                                    -webkit-appearance: none;
+                                                    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+                                                    border: 3px solid #CF252E;
+                                                }
+                                                input[type="range"]::-moz-range-thumb {
+                                                    height: 17px;
+                                                    width: 17px;
+                                                    border: none;
+                                                    border-radius: 50%;
+                                                    background: #CF252E;
+                                                    pointer-events: auto;
+                                                    -moz-appearance: none;
+                                                    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+                                                }
+                                                div#slider {
+                                                    margin-top: 12px;
+                                                    background-color: #c3c3c3;
+                                                    border-radius: 0;
+                                                }
+                                                div.ui-slider-range.ui-widget-header {
+                                                    background: #cf252e;
+                                                }
+                                                .ttl {
+                                                    font-size: 16px;
+                                                    color: #fff;
+                                                    margin-bottom: 7px;
+                                                    padding-bottom: 17px;
+                                                }
+                                                .noUi-target {
+                                                    margin-top: 19px;
+                                                }
+                                                .noUi-horizontal .noUi-handle {
+                                                    background-color: #1eb5f7;
+                                                    border: 1px solid #fff;
+                                                }
+                                                strong {
+                                                    font-size: 12px;
+                                                    color: #fff;
+                                                    line-height: 20px;
+                                                    display: inline-block;
+                                                }
+                                                span {
+                                                    font-size: 13px;
+                                                    color: #0c0c0c;
+                                                    line-height: 23px;
+                                                    display: inline-block;
+                                                    font-weight: 500;
+                                                }
+                                                .lft {
+                                                    float: left;
+                                                }
+                                                .rgt {
+                                                    float: right;
+                                                }
+                                            }
+                                            .yrSlct {
+                                                width: 22%;
+                                                float: left;
+                                                padding-top: 29px;
+                                                select.lcT {
+                                                    display: none;
+                                                }
+                                                .dd-search {
+                                                    display: none;
+                                                }
+                                            }
+                                            .nrBy {
+                                                width: 22%;
+                                                float: left;
+                                                padding-right: 12px;
+                                                padding-top: 20px;
+                                                select.lcT {
+                                                    display: none;
+                                                }
+                                                .dd-search {
+                                                    display: none;
+                                                }
+                                            }
+                                            .mltSt {
+                                                float: left;
+                                                padding-left: 0;
+                                                padding-top: 0;
+                                                width: 26%;
+                                                position: relative;
+                                                padding-right: 0;
+                                                .form-group {
+                                                    float: left;
+                                                    padding-right: 18px;
+                                                }
+                                                label {
+                                                    font-size: 12px;
+                                                    line-height: 22px;
+                                                    color: #898989;
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                            .srBtn {
+                                                float: right;
+                                                width: 13%;
+                                                padding-top: 20px;
+                                                button {
+                                                    height: 49px;
+                                                    /* background-color: #fe3f59; */
+                                                    border: 0px solid #fe3f59;
+                                                    color: #ffffff;
+                                                    font-size: 16px;
+                                                    border-radius: 60px;
+                                                    -webkit-transition: all 0.4s;
+                                                    transition: all 0.4s;
+                                                    font-weight: 600;
+                                                    background: linear-gradient(88deg, rgb(0 0 0 / 72%) 26%, #000 100%);
+                                                    max-width: 136px;
+                                                    width: 100%;
+                                                    transition: .5s ease-out;
+                                                    &:hover {
+                                                        background: transparent;
+                                                        color: #fff;
+                                                        transition: all 0.4s;
+                                                        background: linear-gradient(88deg, rgb(0 0 0) 26%, rgb(0 0 0 / 39%) 100%);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .hdbtn {
+                                            display: none;
+                                        }
+                                        form {
+                                            display: flex;
+                                            .search__field {
+                                                width: 87%;
+                                                position: relative;
+                                                input {
+                                                    border: 0;
+                                                    width: 100%;
+                                                    height: 60px;
+                                                    border-radius: 7px;
+                                                    padding: 10px 21px;
+                                                    outline: none;
+                                                    &::placeholder {
+                                                        font-size: 13px;
+                                                        font-weight: 200;
+                                                    }
+                                                }
+                                                svg {
+                                                    position: absolute;
+                                                    right: 18px;
+                                                    top: 17px;
+                                                    width: 16px;
+                                                }
+                                            }
+                                            button {
+                                                margin-left: 15px;
+                                                background-color: #cf252e;
+                                                color: #ffff;
+                                                font-size: 13px;
+                                                border: 0;
+                                                border-radius: 8px;
+                                                font-weight: 700;
+                                                width: 217px;
+                                            }
+                                        }
+                                    }
+                                    .slide .slide__content--headings {
+                                        text-align: center;
+                                        color: #fff;
+                                        max-width: 100%;
+                                        .company__name {
+                                            background-color: #0000006e;
+                                            position: absolute;
+                                            max-width: 1029px;
+                                            display: block;
+                                            width: 100%;
+                                            text-align: left;
+                                            padding: 103px 124px 137px 113px;
+                                            bottom: 0;
+                                            @include for-laptop {
+                                                padding: 69px 124px 137px 113px;
+                                            }
+                                        }
+                                        .link__company {
+                                            display: flex;
+                                            align-items: center;
+                                            position: absolute;
+                                            bottom: 0;
+                                            width: 100%;
+                                            justify-content: flex-end;
+                                            padding-right: 270px;
+                                            .link__sec {
+                                                display: flex;
+                                                align-items: center;
+                                                background-color: #cf252e;
+                                                padding: 47px 96px 47px 239px;
+                                                justify-content: space-between;
+                                                width: 90%;
+                                            }
+                                            .slides-numbers {
+                                                width: 10%;
+                                                height: 109px;
+                                                display: flex !important;
+                                                align-items: center;
+                                                justify-content: center;
+                                            }
+                                        }
+                                    }
+                                    .slide .slide__content--headings h2 {
+                                        margin: -1px 0;
+                                        font-weight: 700;
+                                        font-size: 23px;
+                                        line-height: 25px;
+                                        text-align: center;
+                                        color: #fff;
+                                        @include for-desktop {
+                                            font-size: 57px;
+                                            line-height: 73px;
+                                        }
+                                        @include for-phone {
+                                            font-size: 26px;
+                                            line-height: 29px;
+                                        }
+                                    }
+                                    .slide .slide__content--headings p {
+                                        font-weight: 700;
+                                        font-size: 40px;
+                                        line-height: 46px;
+                                        text-align: left;
+                                        color: #fff;
+                                        padding-bottom: 0;
+                                        max-width: 594px;
+                                        @include for-desktop {
+                                            padding-bottom: 9px;
+                                            font-size: 15px;
+                                        }
+                                        @include for-laptop {
+                                            font-size: 36px;
+                                        }
+                                        @include for-phone {
+                                            padding-bottom: 7px;
+                                            font-size: 11px;
+                                        }
+                                    }
+                                    .slide .slide__content--headings a {
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        text-align: left;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        padding: 0px 0px;
+                                        border-radius: 10px;
+                                        background: transparent;
+                                        border: 0px solid #d9bc9f;
+                                        margin-top: 31px;
+                                        display: table;
+                                        margin-top: 0px;
+                                        letter-spacing: 3px;
+                                        position: relative;
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            width: 64px;
+                                            height: 1px;
+                                            background-color: rgb(255 255 255 / 48%);
+                                            left: 105%;
+                                            top: 50%;
+                                        }
+                                        @include for-desktop {
+                                            font-size: 12px;
+                                            padding: 12px 17px;
+                                            margin-top: 31px;
+                                            margin-top: 26px;
+                                        }
+                                        @include for-phone {
+                                            font-size: 10px;
+                                            padding: 7px 15px;
+                                            margin-top: 31px;
+                                            margin-top: 19px;
+                                        }
+                                    }
+                                    .slide .slide__content--headings .animated {
+                                        -webkit-transition: all 0.5s ease;
+                                        transition: all 0.5s ease;
+                                    }
+                                    .slider [data-animation-in] {
+                                        opacity: 0;
+                                        -webkit-animation-duration: 1.5s;
+                                        animation-duration: 1.5s;
+                                        -webkit-transition: opacity 0.5s ease 0.3s;
+                                        transition: opacity 0.5s ease 0.3s;
+                                    }
+                                    .slick-dotted .slick-slider {
+                                        margin-bottom: 30px;
+                                    }
+                                    .slick-dots {
+                                        position: absolute;
+                                        bottom: 94px;
+                                        list-style: none;
+                                        display: block;
+                                        text-align: center;
+                                        padding: 0;
+                                        margin: 0;
+                                        width: 100%;
+                                        @include for-desktop {
+                                            display: none !important;
+                                        }
+                                    }
+                                    .slick-dots li {
+                                        position: relative;
+                                        display: inline-block;
+                                        margin: 0 5px;
+                                        padding: 0;
+                                        cursor: pointer;
+                                    }
+                                    .slick-dots li button {
+                                        border: 0;
+                                        display: block;
+                                        outline: none;
+                                        line-height: 0px;
+                                        font-size: 0px;
+                                        color: transparent;
+                                        padding: 5px;
+                                        cursor: pointer;
+                                        -webkit-transition: all 0.3s ease;
+                                        transition: all 0.3s ease;
+                                    }
+                                    .slick-dots li button:hover,
+                                    .slick-dots li button:focus {
+                                        outline: none;
+                                    }
+                                    .simple-dots .slick-dots li {
+                                        height: 3px;
+                                        width: 23px;
+                                    }
+                                    .simple-dots .slick-dots li button {
+                                        position: relative;
+                                        background-color: white;
+                                        opacity: 0.25;
+                                        width: 50px;
+                                        height: 3px;
+                                        padding: 0;
+                                        width: 12px;
+                                        height: 12px;
+                                        background: #fff;
+                                        opacity: 0.1;
+                                        border-radius: 50%;
+                                        margin-right: 10px;
+                                    }
+                                    .simple-dots .slick-dots li button:hover,
+                                    .simple-dots .slick-dots li button:focus {
+                                        opacity: 1;
+                                    }
+                                    .simple-dots .slick-dots li.slick-active button {
+                                        background: #926248;
+                                        opacity: 0.75;
+                                    }
+                                    .stick-dots .slick-dots li {
+                                        height: 3px;
+                                        width: 23px;
+                                    }
+                                    .stick-dots .slick-dots li button {
+                                        position: relative;
+                                        background-color: white;
+                                        opacity: 0.25;
+                                        width: 12px;
+                                        height: 12px;
+                                        background: #fff;
+                                        opacity: 0.1;
+                                        border-radius: 50%;
+                                        margin-right: 10px;
+                                    }
+                                    .stick-dots .slick-dots li button:hover,
+                                    .stick-dots .slick-dots li button:focus {
+                                        background: #926248;
+                                        opacity: 0.75;
+                                    }
+                                    .stick-dots .slick-dots li.slick-active button {
+                                        background: #926248;
+                                        opacity: 0.75;
+                                    }
+                                    .stick-dots .slick-dots li.slick-active button:hover,
+                                    .stick-dots .slick-dots li.slick-active button:focus {
+                                        opacity: 1;
+                                    }
+                                    /* /////////// IMAGE ZOOM /////////// */
+                                    @-webkit-keyframes zoomInImage {
+                                        from {
+                                            -webkit-transform: scale3d(1, 1, 1);
+                                            transform: scale3d(1, 1, 1);
+                                        }
+                                        to {
+                                            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                                            transform: scale3d(1.1, 1.1, 1.1);
+                                        }
+                                    }
+                                    @keyframes zoomInImage {
+                                        from {
+                                            -webkit-transform: scale3d(1, 1, 1);
+                                            transform: scale3d(1, 1, 1);
+                                        }
+                                        to {
+                                            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                                            transform: scale3d(1.1, 1.1, 1.1);
+                                        }
+                                    }
+                                    .zoomInImage {
+                                        -webkit-animation-name: zoomInImage;
+                                        animation-name: zoomInImage;
+                                    }
+                                    @-webkit-keyframes zoomOutImage {
+                                        from {
+                                            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                                            transform: scale3d(1.1, 1.1, 1.1);
+                                        }
+                                        to {
+                                            -webkit-transform: scale3d(1, 1, 1);
+                                            transform: scale3d(1, 1, 1);
+                                        }
+                                    }
+                                    @keyframes zoomOutImage {
+                                        from {
+                                            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                                            transform: scale3d(1.1, 1.1, 1.1);
+                                        }
+                                        to {
+                                            -webkit-transform: scale3d(1, 1, 1);
+                                            transform: scale3d(1, 1, 1);
+                                        }
+                                    }
+                                    .zoomOutImage {
+                                        -webkit-animation-name: zoomOutImage;
+                                        animation-name: zoomOutImage;
+                                    }
+                                }
+                                
+                                .dropdown-select.wide.lcT.open li.option:first-child {
+                                    display: none;
+                                }
+                                /*****brand*****/
+                                
+                                .featured__section {
+                                    padding-top: 125px;
+                                    padding-bottom: 98px;
+                                    background-color: #f9f9f9;
+                                    .featured__head {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding-bottom: 68px;
+                                        h3 {
+                                            font-size: 36px;
+                                            font-weight: 700;
+                                            color: #401010;
+                                            padding-left: 100px;
+                                            position: relative;
+                                            &::after {
+                                                content: "";
+                                                position: absolute;
+                                                left: 104%;
+                                                width: 115px;
+                                                height: 1px;
+                                                background-color: #cf252e;
+                                                top: 57%;
+                                            }
+                                        }
+                                        a {
+                                            font-size: 14px;
+                                            text-decoration: none;
+                                            color: #401010;
+                                            font-weight: 600;
+                                            svg {
+                                                width: 12px;
+                                                margin-left: 4px;
+                                                line-height: 2px;
+                                                top: -3px;
+                                                position: relative;
+                                                path {
+                                                    fill: #401010;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .sldbx {
+                                        width: 100%;
+                                        padding: 0px 10px;
+                                        .prtimg {
+                                            width: 100%;
+                                            border-radius: 10px;
+                                            overflow: hidden;
+                                            height: 268px;
+                                            object-fit: cover;
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                                height: 268px;
+                                            }
+                                        }
+                                        .cntbx {
+                                            width: 100%;
+                                            position: relative;
+                                            max-width: 84%;
+                                            margin: 0px auto;
+                                            .ctScb {
+                                                width: 100%;
+                                                position: relative;
+                                                top: -68px;
+                                                text-decoration: none;
+                                                display: inline-block;
+                                                background-color: #fff;
+                                                border-radius: 10px;
+                                                padding: 31px 28px;
+                                                box-shadow: 0px 0px 13px 3px rgb(0 0 0 / 28%);
+                                                min-height: 228px;
+                                                .rtBx {
+                                                    position: absolute;
+                                                    right: 0px;
+                                                    top: 0px;
+                                                    font-size: 17px;
+                                                    line-height: 24px;
+                                                    font-weight: 600;
+                                                    background-color: #cf252e;
+                                                    color: #fff;
+                                                    padding: 8px 18px 6px;
+                                                    border-radius: 0px 10px 0px 14px;
+                                                    span {
+                                                        font-size: 9px;
+                                                        line-height: 27px;
+                                                        color: #fff;
+                                                    }
+                                                }
+                                                .prtTyp {
+                                                    font-size: 9px;
+                                                    line-height: 20px;
+                                                    color: #707070;
+                                                    letter-spacing: 1px;
+                                                    text-transform: uppercase;
+                                                }
+                                                .prtNm {
+                                                    font-size: 17px;
+                                                    line-height: 24px;
+                                                    font-weight: 600;
+                                                    color: #505050;
+                                                    -webkit-transition: all 0.4s;
+                                                    transition: all 0.4s;
+                                                    padding-top: 10px;
+                                                }
+                                                .lact {
+                                                    width: 100%;
+                                                    padding-left: 25px;
+                                                    color: #C2C2C2;
+                                                    font-size: 11px;
+                                                    line-height: 22px;
+                                                    text-transform: uppercase;
+                                                    margin-top: 5px;
+                                                    background: url(../images/place.svg) no-repeat;
+                                                    background-position: 2px 1px;
+                                                    font-weight: 500;
+                                                }
+                                                .bdBt {
+                                                    width: 100%;
+                                                    padding-top: 24px;
+                                                    .btD {
+                                                        padding-left: 26px;
+                                                        float: left;
+                                                        background: url(../images/bathtub.svg) no-repeat;
+                                                        background-position: 1px 2px;
+                                                        font-size: 10px;
+                                                        font-weight: 700;
+                                                        color: #6B6B6B;
+                                                        line-height: 28px;
+                                                        width: 40px;
+                                                    }
+                                                    .bdS {
+                                                        padding-left: 27px;
+                                                        float: left;
+                                                        margin-left: 14px;
+                                                        background: url(../images/bed.svg) no-repeat;
+                                                        background-position: 1px 3px;
+                                                        font-size: 10px;
+                                                        font-weight: 700;
+                                                        color: #6B6B6B;
+                                                        line-height: 28px;
+                                                        width: 40px;
+                                                    }
+                                                }
+                                                .icNx {
+                                                    position: absolute;
+                                                    bottom: 24px;
+                                                    right: -22px;
+                                                    width: 50px;
+                                                    height: 50px;
+                                                    border-radius: 50%;
+                                                    background: url(../images/slider-right-arrow.svg) no-repeat;
+                                                    background-position: center 18px;
+                                                    background-color: #fff;
+                                                    box-shadow: 0px 0px 8px 2px #ccc;
+                                                    transition: all 0.4s;
+                                                }
+                                                &:hover {
+                                                    .icNx {
+                                                        background-color: #cf252e;
+                                                        -webkit-transition: all 0.4s;
+                                                        transition: all 0.4s;
+                                                        right: -26px;
+                                                        background-position: center -18px;
+                                                    }
+                                                    .prtNm {
+                                                        color: #cf252e;
+                                                        transition: all 0.4s;
+                                                    }
+                                                }
+                                            }
+                                            a.vtrBt {
+                                                position: absolute;
+                                                bottom: 99px;
+                                                right: 100px;
+                                                color: #707070;
+                                                border: 1px solid #707070;
+                                                text-decoration: none;
+                                                padding: 4px 16px 3px;
+                                                border-radius: 60px;
+                                                font-size: 11px;
+                                                line-height: 22px;
+                                                font-weight: 600;
+                                                &:hover {
+                                                    border-color: #cf252e;
+                                                    background-color: #cf252e;
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .slick-dots {
+                                        top: inherit;
+                                        bottom: -2px;
+                                        left: 0px;
+                                        right: 0px;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    .slick-dots li button {
+                                        font-size: 0px;
+                                        line-height: 0px;
+                                        color: transparent;
+                                        width: 8px;
+                                        height: 8px;
+                                        border: 1px solid #cf252e;
+                                        border-radius: 50%;
+                                        padding: 0px;
+                                        display: inline-block;
+                                        transition: all 0.4s;
+                                    }
+                                    .slick-dots li.slick-active button {
+                                        width: 20px;
+                                        border-radius: 40px;
+                                        background-color: #cf252e;
+                                        transition: all 0.4s;
+                                    }
+                                    .slick-dots li {
+                                        width: 25px;
+                                        text-align: center;
+                                    }
+                                    .slick-dots::after {
+                                        display: none;
+                                    }
+                                    @include for-phone {
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                    }
+                                    .slick-carousel {
+                                        margin: 0 auto;
+                                    }
+                                    /* The width of each slide */
+                                    .slick-slide {
+                                        width: 350px;
+                                    }
+                                    /* Color of the arrows */
+                                    .slick-next::before,
+                                    .slick-prev::before {
+                                        color: blue;
+                                    }
+                                    .slick-nav {
+                                        position: absolute;
+                                        top: 50%;
+                                        top: calc(50% - 20px);
+                                        cursor: pointer;
+                                        &:hover {
+                                            opacity: .5;
+                                        }
+                                        &.prev-arrow {
+                                            left: -77px;
+                                        }
+                                        &.next-arrow {
+                                            right: -77px;
+                                        }
+                                    }
+                                    .brand__outer {
+                                        @include for-phone {
+                                            padding: 0px 0;
+                                        }
+                                    }
+                                    .brand__icon {
+                                        min-height: 203px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        cursor: pointer;
+                                        &:hover {
+                                            background: rgb(42 42 42 / 74%);
+                                        }
+                                        @include for-phone {
+                                            min-height: 123px;
+                                            img {
+                                                width: 104px;
+                                            }
+                                        }
+                                    }
+                                }
+                                /*****end-brand*****/
+                                
+                                .map__section {
+                                    display: flex;
+                                    .left__map {
+                                        width: 54%;
+                                        position: relative;
+                                        &::after {
+                                            content: "";
+                                            background: linear-gradient(270deg, white 0%, rgb(255 255 255 / 55%) 50%, rgba(0, 0, 0, 0) 100%);
+                                            height: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            width: 36%;
+                                        }
+                                        iframe {
+                                            width: 100%;
+                                            height: 100%;
+                                            filter: grayscale(1);
+                                        }
+                                        #map {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                    .property__map {
+                                        width: 51%;
+                                        padding: 84px 57px;
+                                        .head__map {
+                                            padding-bottom: 43px;
+                                            h3 {
+                                                font-size: 36px;
+                                                font-weight: 700;
+                                                color: #401010;
+                                                position: relative;
+                                                &::after {
+                                                    content: "";
+                                                    position: absolute;
+                                                    width: 115px;
+                                                    height: 1px;
+                                                    background-color: #cf252e;
+                                                    top: 57%;
+                                                    margin-left: 31px;
+                                                }
+                                            }
+                                            .bot__head {
+                                                display: flex;
+                                                justify-content: space-between;
+                                            }
+                                        }
+                                        .bot__head {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            padding-bottom: 38px;
+                                            h4 {
+                                                font-weight: 500;
+                                                font-size: 15px;
+                                                span {
+                                                    color: #a3161e;
+                                                }
+                                            }
+                                            a {
+                                                font-size: 14px;
+                                                text-decoration: none;
+                                                color: #401010;
+                                                font-weight: 600;
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                height: 18px;
+                                                overflow: hidden;
+                                                align-items: center;
+                                                img {
+                                                    height: auto;
+                                                    object-fit: cover;
+                                                    object-position: 0 16px;
+                                                    width: 14px;
+                                                    margin-left: 10px;
+                                                }
+                                            }
+                                        }
+                                        .property__grid {
+                                            .property__outer {
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex !important;
+                                                -webkit-box-align: center;
+                                                -ms-flex-align: center;
+                                                align-items: center;
+                                                gap: 18px;
+                                                padding-bottom: 13px;
+                                                .property__item {
+                                                    width: 50%;
+                                                    .lcBx {
+                                                        padding: 0px 0px;
+                                                        a {
+                                                            position: relative;
+                                                            display: inline-block;
+                                                            width: 100%;
+                                                            overflow: hidden;
+                                                            height: 11vw;
+                                                            border-radius: 14px;
+                                                            &::after {
+                                                                position: absolute;
+                                                                content: '';
+                                                                width: 100%;
+                                                                height: 160%;
+                                                                background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+                                                                left: 0px;
+                                                                top: 0px;
+                                                                transition: all 0.4s;
+                                                            }
+                                                            &:hover {
+                                                                transition: all 0.4s;
+                                                                &::after {
+                                                                    top: -50%;
+                                                                    transition: all 0.4s;
+                                                                }
+                                                                .cnt .rgt span {
+                                                                    color: #fff;
+                                                                    background-color: #cf252e;
+                                                                    transition: all 0.4s;
+                                                                }
+                                                                .icMg {
+                                                                    img {
+                                                                        transform: scale(1.1);
+                                                                    }
+                                                                }
+                                                            }
+                                                            .icMg {
+                                                                width: 100%;
+                                                                object-fit: cover;
+                                                                height: 100%;
+                                                                img {
+                                                                    width: 100%;
+                                                                    object-fit: cover;
+                                                                    height: 100%;
+                                                                }
+                                                            }
+                                                            .cnt {
+                                                                position: absolute;
+                                                                width: 100%;
+                                                                bottom: 0px;
+                                                                left: 0px;
+                                                                padding: 24px 30px;
+                                                                z-index: 1;
+                                                                display: flex;
+                                                                align-items: flex-end;
+                                                                .lft {
+                                                                    width: 66%;
+                                                                    .rt {
+                                                                        font-size: 11px;
+                                                                        line-height: 20px;
+                                                                        color: #fff;
+                                                                        opacity: 0.9;
+                                                                        text-transform: uppercase;
+                                                                        letter-spacing: 2px;
+                                                                        span {
+                                                                            font-size: 12px;
+                                                                            line-height: 20px;
+                                                                            color: #fff;
+                                                                        }
+                                                                    }
+                                                                    .lc {
+                                                                        font-size: 16px;
+                                                                        line-height: 20px;
+                                                                        color: #fff;
+                                                                        font-weight: 600;
+                                                                        padding-top: 8px;
+                                                                    }
+                                                                    .rmD {
+                                                                        font-size: 10px;
+                                                                        color: #fff;
+                                                                        line-height: 20px;
+                                                                        padding: 2px 13px;
+                                                                        background-color: rgba(0, 0, 0, 0.8);
+                                                                        border-radius: 50px;
+                                                                        display: inline-block;
+                                                                        margin-top: 5px;
+                                                                    }
+                                                                }
+                                                                .rgt {
+                                                                    width: 34%;
+                                                                    span {
+                                                                        float: right;
+                                                                        font-size: 10px;
+                                                                        line-height: 9px;
+                                                                        color: #000;
+                                                                        text-decoration: none;
+                                                                        -webkit-transition: all 0.4s;
+                                                                        transition: all 0.4s;
+                                                                        background-color: #fff;
+                                                                        padding: 10px 17px;
+                                                                        border-radius: 21px;
+                                                                        font-weight: 700;
+                                                                        @include for-laptop {
+                                                                            font-size: 9px;
+                                                                            line-height: 9px;
+                                                                            padding: 10px 9px;
+                                                                            border-radius: 21px;
+                                                                            font-weight: 700;
+                                                                            width: 84px;
+                                                                            text-align: center;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .rental__section {
+                                    padding: 173px 0;
+                                    position: relative;
+                                    &::before {
+                                        width: 25%;
+                                        content: '';
+                                        position: absolute;
+                                        left: 0px;
+                                        top: 0px;
+                                        height: 100%;
+                                        background-color: #cf252e;
+                                    }
+                                    .container {
+                                        position: relative;
+                                        z-index: 9;
+                                        .rental__outer {
+                                            display: flex;
+                                            align-items: center;
+                                            .left-image {
+                                                width: 43%;
+                                                border-radius: 21px;
+                                                overflow: hidden;
+                                                img {
+                                                    width: 100%;
+                                                }
+                                            }
+                                            .rental__content {
+                                                width: 57%;
+                                                padding: 0px 158px;
+                                                h4 {
+                                                    color: #401010;
+                                                    padding-bottom: 14px;
+                                                    font-size: 15px;
+                                                    font-weight: 600;
+                                                    letter-spacing: 2px;
+                                                }
+                                                h3 {
+                                                    font-size: 46px;
+                                                    line-height: 58px;
+                                                    color: #000;
+                                                    font-weight: 800;
+                                                }
+                                                p {
+                                                    font-size: 16px;
+                                                    line-height: 28px;
+                                                    color: #000;
+                                                    padding-top: 44px;
+                                                    font-weight: 300;
+                                                }
+                                                a {
+                                                    padding: 15px 38px;
+                                                    border-radius: 6px;
+                                                    font-size: 14px;
+                                                    color: #fff;
+                                                    background-color: #1c1c1c;
+                                                    display: inline-block;
+                                                    text-transform: uppercase;
+                                                    letter-spacing: 1px;
+                                                    text-decoration: none;
+                                                    border: 1px solid #1c1c1c;
+                                                    margin-top: 39px;
+                                                    font-weight: 700;
+                                                    &:hover {
+                                                        background-color: #fff;
+                                                        color: #000;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .download-section {
+                                    background-color: #f3f3f3;
+                                    padding: 100px 0;
+                                    .download__outer {
+                                        display: flex;
+                                        align-items: center;
+                                        .download__left {
+                                            width: 52%;
+                                            padding-right: 179px;
+                                            padding-left: 115px;
+                                            h3 {
+                                                font-size: 40px;
+                                                line-height: 47px;
+                                                text-transform: uppercase;
+                                                margin-bottom: 35px;
+                                                font-weight: 800;
+                                                color: #cf252e;
+                                            }
+                                            p {
+                                                color: #7a7a7a;
+                                                font-size: 20px;
+                                                line-height: 32px;
+                                                padding-right: 88px;
+                                                padding-bottom: 41px;
+                                            }
+                                            ul {
+                                                display: flex;
+                                                gap: 12px;
+                                            }
+                                        }
+                                        .download__image {
+                                            width: 38%;
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .wall__section {
+                                    .wall__outer {
+                                        display: -webkit-box;
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        padding-left: 281px;
+                                        -webkit-box-align: center;
+                                        -ms-flex-align: center;
+                                        align-items: center;
+                                        padding: 170px 0;
+                                        padding-left: 277px;
+                                        @include for-laptop {
+                                            padding-left: 205px;
+                                        }
+                                        .wall__content {
+                                            width: 26%;
+                                            padding-right: 69px;
+                                            @include for-laptop {
+                                                padding-right: 39px;
+                                            }
+                                            h3 {
+                                                font-size: 36px;
+                                                font-weight: 800;
+                                                padding-bottom: 23px;
+                                                line-height: 38px;
+                                            }
+                                            p {
+                                                font-size: 20px;
+                                                line-height: 25px;
+                                                color: #919191;
+                                            }
+                                        }
+                                        .wall__slider {
+                                            width: 74%;
+                                            &::before {
+                                                content: "";
+                                                position: absolute;
+                                                left: -106px;
+                                                width: 350px;
+                                                height: 350px;
+                                                background-image: url(../images/round.png);
+                                                bottom: -88px;
+                                                z-index: -1;
+                                            }
+                                            .slick-list {
+                                                padding-left: 0px!important; // half partial
+                                            }
+                                            .slick-slide {
+                                                margin: 10px;
+                                            }
+                                            .wall__item {
+                                                min-height: 296px;
+                                                position: relative;
+                                                border-radius: 11px;
+                                                overflow: hidden;
+                                                margin-bottom: 23px;
+                                                @include for-laptop {
+                                                    min-height: 243px;
+                                                }
+                                                &:after {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    background-color: rgb(0 0 0 / 33%);
+                                                    z-index: 9;
+                                                    transition: .5s ease-out;
+                                                }
+                                                &::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 20px;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    background-color: #fff;
+                                                    opacity: 0;
+                                                    z-index: 9;
+                                                    transition: .5s ease-out;
+                                                }
+                                                .wall__image {
+                                                    height: 100%;
+                                                    position: absolute;
+                                                    img {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        object-fit: cover;
+                                                    }
+                                                }
+                                                .wall-cont {
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                    width: 100%;
+                                                    padding: 0 23px 23px 23px;
+                                                    z-index: 10;
+                                                    h3 {
+                                                        font-size: 15px;
+                                                        color: #fff;
+                                                        font-weight: 600;
+                                                        text-transform: capitalize;
+                                                        padding-bottom: 10px;
+                                                    }
+                                                    h4 {
+                                                        font-size: 14px;
+                                                        color: #fff;
+                                                        font-weight: 400;
+                                                        text-transform: uppercase;
+                                                    }
+                                                    .react {
+                                                        display: flex;
+                                                        gap: 13px;
+                                                        padding-top: 12px;
+                                                        align-items: center;
+                                                        svg {
+                                                            width: 15px;
+                                                        }
+                                                        span {
+                                                            color: #fff;
+                                                            font-size: 12px;
+                                                            padding-left: 8px;
+                                                        }
+                                                        .ic {
+                                                            height: 13px;
+                                                            position: absolute;
+                                                            right: 0;
+                                                            opacity: 0;
+                                                            img {
+                                                                width: 15px;
+                                                                object-position: 0px -38px;
+                                                                overflow: hidden;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &:hover {
+                                                    box-shadow: 1px 13px 17px rgb(0 0 0 / 53%);
+                                                    .ic {
+                                                        height: 13px;
+                                                        position: absolute;
+                                                        right: 29px !important;
+                                                        opacity: 1 !important;
+                                                    }
+                                                    &::after {
+                                                        opacity: 0;
+                                                        z-index: 0;
+                                                    }
+                                                    &::before {
+                                                        content: "";
+                                                        position: absolute;
+                                                        left: 0px;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        background-color: rgb(254 63 89 / 72%);
+                                                        opacity: 1;
+                                                        z-index: 9;
+                                                        transition: .5s ease-out;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .premium__section {
+                                    .premium__outer {
+                                        padding-left: 54px;
+                                        display: flex;
+                                        padding-bottom: 91px;
+                                        padding-top: 100px;
+                                        .left__premium {
+                                            width: 33%;
+                                            min-height: 530px;
+                                            border-radius: 10px;
+                                            overflow: hidden;
+                                            position: relative;
+                                            &:hover {
+                                                img {
+                                                    transform: scale(1.1);
+                                                }
+                                            }
+                                            &:after {
+                                                content: "";
+                                                position: absolute;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                background-color: rgb(47 36 196 / 72%);
+                                            }
+                                            img {
+                                                width: 100%;
+                                                position: absolute;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+                                            .content {
+                                                position: absolute;
+                                                top: 50%;
+                                                text-align: center;
+                                                transform: translate(0px, -50%);
+                                                z-index: 9;
+                                                h4 {
+                                                    font-size: 28px;
+                                                    color: #ffff;
+                                                    font-weight: 400;
+                                                    padding-bottom: 10px;
+                                                }
+                                                h3 {
+                                                    font-size: 40px;
+                                                    color: #ffff;
+                                                    font-weight: 600;
+                                                    padding-bottom: 26px;
+                                                }
+                                                p {
+                                                    font-size: 13px;
+                                                    color: #ffff;
+                                                    font-weight: 400;
+                                                    padding: 0 16px;
+                                                    padding-bottom: 10px;
+                                                    padding-bottom: 24px;
+                                                    line-height: 25px;
+                                                }
+                                                a {
+                                                    background-color: #fe3f59;
+                                                    color: #fff;
+                                                    text-decoration: none;
+                                                    padding: 10px 19px;
+                                                    border-radius: 7px;
+                                                    margin-top: 16px;
+                                                    display: table;
+                                                    margin: 0 auto;
+                                                    margin-top: 15px;
+                                                    font-weight: 500;
+                                                    &:hover {
+                                                        background-color: #ffffff;
+                                                        color: #fe3f59;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .right__premium {
+                                            width: 67%;
+                                            padding-left: 90px;
+                                            .premium__head {
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                -webkit-box-pack: justify;
+                                                -ms-flex-pack: justify;
+                                                justify-content: space-between;
+                                                padding-bottom: 68px;
+                                                padding-right: 65px;
+                                                h3 {
+                                                    font-size: 36px;
+                                                    font-weight: 700;
+                                                    color: #401010;
+                                                    position: relative;
+                                                    &:after {
+                                                        content: "";
+                                                        position: absolute;
+                                                        left: 104%;
+                                                        width: 115px;
+                                                        height: 1px;
+                                                        background-color: #cf252e;
+                                                        top: 57%;
+                                                    }
+                                                }
+                                                a {
+                                                    font-size: 14px;
+                                                    text-decoration: none;
+                                                    color: #401010;
+                                                    font-weight: 600;
+                                                    display: -webkit-box;
+                                                    display: -ms-flexbox;
+                                                    display: flex;
+                                                    height: 18px;
+                                                    overflow: hidden;
+                                                    -webkit-box-align: center;
+                                                    -ms-flex-align: center;
+                                                    align-items: center;
+                                                    img {
+                                                        height: auto;
+                                                        -o-object-fit: cover;
+                                                        object-fit: cover;
+                                                        -o-object-position: 0 16px;
+                                                        object-position: 0 16px;
+                                                        width: 14px;
+                                                        margin-left: 10px;
+                                                    }
+                                                }
+                                            }
+                                            .premier__slider {
+                                                .slick-list {
+                                                    padding-left: 0px!important; // half partial
+                                                }
+                                                .slick-slide {
+                                                    margin: 10px;
+                                                }
+                                                .premirer__item {
+                                                    margin-bottom: 19px;
+                                                    border-radius: 9px;
+                                                    &:hover {
+                                                        box-shadow: 1px 13px 13px rgb(187 187 187 / 53%);
+                                                    }
+                                                }
+                                                .prtimg {
+                                                    width: 100%;
+                                                    border-radius: 10px;
+                                                    overflow: hidden;
+                                                    height: 180px;
+                                                    img {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        object-fit: cover;
+                                                    }
+                                                }
+                                                .cntbx {
+                                                    width: 100%;
+                                                    position: relative;
+                                                    max-width: 100%;
+                                                    margin: 0px auto;
+                                                    .ctScb {
+                                                        width: 100%;
+                                                        position: relative;
+                                                        top: 0;
+                                                        text-decoration: none;
+                                                        display: inline-block;
+                                                        border-radius: 10px;
+                                                        padding: 14px 7px;
+                                                        .rtBx {
+                                                            right: 0px;
+                                                            top: 0px;
+                                                            font-size: 17px;
+                                                            line-height: 24px;
+                                                            font-weight: 700;
+                                                            color: #f72845;
+                                                            padding: 8px 1px 6px;
+                                                            border-radius: 0px 10px 0px 14px;
+                                                        }
+                                                        .prtTyp {
+                                                            font-size: 12px;
+                                                            text-transform: uppercase;
+                                                            color: #6e6e6e;
+                                                        }
+                                                        .prtNm {
+                                                            font-size: 17px;
+                                                            line-height: 24px;
+                                                            font-weight: 600;
+                                                            color: #505050;
+                                                            -webkit-transition: all 0.4s;
+                                                            transition: all 0.4s;
+                                                            padding-top: 10px;
+                                                        }
+                                                        .lact {
+                                                            width: 100%;
+                                                            padding-left: 25px;
+                                                            color: #C2C2C2;
+                                                            font-size: 11px;
+                                                            line-height: 22px;
+                                                            text-transform: uppercase;
+                                                            margin-top: 5px;
+                                                            background: url(../images/place.svg) no-repeat;
+                                                            background-position: 2px 1px;
+                                                            font-weight: 500;
+                                                        }
+                                                        .bdBt {
+                                                            width: 100%;
+                                                            padding-top: 24px;
+                                                            .btD {
+                                                                padding-left: 26px;
+                                                                float: left;
+                                                                background: url(../images/bathtub.svg) no-repeat;
+                                                                background-position: 1px 2px;
+                                                                font-size: 10px;
+                                                                font-weight: 700;
+                                                                color: #6B6B6B;
+                                                                line-height: 28px;
+                                                                width: 40px;
+                                                            }
+                                                            .bdS {
+                                                                padding-left: 27px;
+                                                                float: left;
+                                                                margin-left: 14px;
+                                                                background: url(../images/bed.svg) no-repeat;
+                                                                background-position: 1px 3px;
+                                                                font-size: 10px;
+                                                                font-weight: 700;
+                                                                color: #6B6B6B;
+                                                                line-height: 28px;
+                                                                width: 40px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .section__footbanner {
+                                    padding: 131px 0;
+                                    position: relative;
+                                    .outer__banner {
+                                        min-height: 587px;
+                                        padding: 100px 126px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        overflow: hidden;
+                                        position: relative;
+                                        border-radius: 31px;
+                                        background-attachment: fixed;
+                                        background-size: cover;
+                                        background-position: bottom;
+                                        &:after {
+                                            content: "";
+                                            position: absolute;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            background-color: rgba(0, 0, 0, 0.33);
+                                            z-index: 9;
+                                            -webkit-transition: 0.5s ease-out;
+                                            transition: 0.5s ease-out;
+                                        }
+                                        .left-content {
+                                            position: relative;
+                                            z-index: 99;
+                                            h4 {
+                                                font-size: 17px;
+                                                padding-bottom: 16px;
+                                                color: #fff;
+                                                text-transform: uppercase;
+                                            }
+                                            h3 {
+                                                font-size: 38px;
+                                                max-width: 542px;
+                                                line-height: 38px;
+                                                text-transform: capitalize;
+                                                font-weight: 700;
+                                                color: #fff;
+                                                padding-bottom: 37px;
+                                            }
+                                            a {
+                                                background-color: #cf251e;
+                                                color: #fff;
+                                                text-decoration: none;
+                                                font-size: 14px;
+                                                font-weight: 700;
+                                                max-width: 236px;
+                                                display: flex;
+                                                align-items: center;
+                                                height: 51px;
+                                                justify-content: center;
+                                                border-radius: 10px;
+                                                &:hover {
+                                                    background-color: #000000;
+                                                }
+                                            }
+                                        }
+                                        .right-cont {
+                                            position: relative;
+                                            z-index: 99;
+                                            background-color: #fff;
+                                            height: 167px;
+                                            width: 167px;
+                                            border-radius: 50%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            border: 1px solid #000;
+                                            margin-top: 191px;
+                                            h4 {
+                                                font-size: 35px;
+                                                color: #cf251e;
+                                                font-weight: 500;
+                                                max-width: 103px;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .footer-badge {
+                                    background-color: #111010;
+                                    padding: 10px 0;
+                                    .outer__badge {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .cont__foot {
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                        .link-foot {
+                                            ul {
+                                                display: flex;
+                                                gap: 35px;
+                                                li {
+                                                    a {
+                                                        font-weight: normal;
+                                                        font-size: 15px;
+                                                        letter-spacing: 0.01em;
+                                                        text-align: left;
+                                                        color: rgb(255 255 255);
+                                                        text-decoration: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .social {
+                                            padding-left: 299px;
+                                            ul {
+                                                display: flex;
+                                                gap: 16px;
+                                                li {
+                                                    a {
+                                                        svg {
+                                                            width: 22px;
+                                                            path {
+                                                                transition: .5s ease-out;
+                                                            }
+                                                        }
+                                                    }
+                                                    &:first-child {
+                                                        svg {
+                                                            path {
+                                                                stroke: white;
+                                                                stroke-width: 2px;
+                                                            }
+                                                        }
+                                                    }
+                                                    &:hover {
+                                                        svg {
+                                                            path {
+                                                                stroke: #f72845;
+                                                                fill: #f72845;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                /*****product*****/
+                                
+                                .footer {
+                                    background-repeat: no-repeat;
+                                    background-position: top center;
+                                    .footer__outer {
+                                        padding-top: 77px;
+                                        padding-bottom: 42px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        @include for-phone {
+                                            flex-wrap: wrap;
+                                            padding-top: 45px;
+                                            padding-bottom: 29px;
+                                        }
+                                        .footer__col {
+                                            @include for-phone {
+                                                width: 100%;
+                                            }
+                                            .footer__head {
+                                                h3 {
+                                                    font-weight: 700;
+                                                    font-size: 16px;
+                                                    letter-spacing: 0.03em;
+                                                    line-height: 21px;
+                                                    text-align: left;
+                                                    color: #680b12;
+                                                    padding-bottom: 29px;
+                                                    min-height: 87px;
+                                                    text-transform: uppercase;
+                                                    min-height: 13px;
+                                                    min-height: 87px;
+                                                    @include for-tablet {
+                                                        line-height: 34px;
+                                                        min-height: auto;
+                                                    }
+                                                    @include for-phone {
+                                                        text-align: center;
+                                                    }
+                                                }
+                                            }
+                                            .footer__links {
+                                                ul {
+                                                    li {
+                                                        padding-bottom: 14px;
+                                                        font-weight: normal;
+                                                        font-size: 14px;
+                                                        letter-spacing: 0.01em;
+                                                        line-height: 19px;
+                                                        text-align: left;
+                                                        color: rgba(255, 255, 255, 0.43);
+                                                        text-decoration: none;
+                                                        @include for-phone {
+                                                            text-align: center;
+                                                            line-height: 23px;
+                                                        }
+                                                        a {
+                                                            font-weight: normal;
+                                                            font-size: 16px;
+                                                            letter-spacing: 0.01em;
+                                                            text-align: left;
+                                                            color: rgb(110 110 110);
+                                                            text-decoration: none;
+                                                            @include for-phone {
+                                                                text-align: center;
+                                                                line-height: normal;
+                                                            }
+                                                            &:hover {
+                                                                color: #cf251e;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .subscribe {
+                                                h3 {
+                                                    font-size: 27px;
+                                                    font-weight: 700;
+                                                    padding-bottom: 16px;
+                                                }
+                                                h4 {
+                                                    font-size: 19px;
+                                                    max-width: 500px;
+                                                    color: grey;
+                                                    padding-bottom: 13px;
+                                                    line-height: 26px;
+                                                }
+                                                .sign {
+                                                    border: 1px solid #ababab;
+                                                    position: relative;
+                                                    input {
+                                                        width: 100%;
+                                                        border: 0;
+                                                        height: 62px;
+                                                    }
+                                                    button {
+                                                        background-color: #cf251e;
+                                                        border: 0;
+                                                        color: #fff;
+                                                        position: absolute;
+                                                        right: 13px;
+                                                        padding: 15px 31px;
+                                                        top: 9px;
+                                                        border-radius: 5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .copy__section {
+                                        padding: 0 36px;
+                                        padding-top: 33px;
+                                        padding-bottom: 29px;
+                                        display: -webkit-box;
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        -webkit-box-pack: justify;
+                                        -ms-flex-pack: justify;
+                                        justify-content: space-between;
+                                        background-color: #f6f6f6;
+                                        @include for-phone {
+                                            flex-wrap: wrap;
+                                            padding-top: 49px;
+                                            padding-bottom: 19px;
+                                        }
+                                        .social {
+                                            @include for-phone {
+                                                width: 100%;
+                                                padding-bottom: 10px;
+                                            }
+                                            @include for-phone {
+                                                text-align: center;
+                                            }
+                                            ul {
+                                                display: flex;
+                                                gap: 14px;
+                                                align-items: center;
+                                                @include for-phone {
+                                                    justify-content: center;
+                                                }
+                                                li {
+                                                    @include for-phone {
+                                                        text-align: center;
+                                                        padding: 0 13px;
+                                                    }
+                                                    a {
+                                                        &:hover {
+                                                            opacity: .7;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .copy__text {
+                                            @include for-phone {
+                                                width: 100%;
+                                                padding-bottom: 10px;
+                                            }
+                                            p {
+                                                font-weight: 500;
+                                                font-size: 14px;
+                                                letter-spacing: 0.01em;
+                                                line-height: 24px;
+                                                text-align: center;
+                                                color: #000000;
+                                                @include for-phone {
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
+                                        .privacy {
+                                            ul {
+                                                display: flex;
+                                                gap: 10px;
+                                                li {
+                                                    a {
+                                                        font-weight: 500;
+                                                        font-size: 14px;
+                                                        letter-spacing: 0.01em;
+                                                        line-height: 24px;
+                                                        text-align: center;
+                                                        color: #000000;
+                                                        text-decoration: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .power {
+                                            @include for-phone {
+                                                width: 100%;
+                                                padding-bottom: 10px;
+                                            }
+                                            @include for-phone {
+                                                text-align: center;
+                                            }
+                                            span {
+                                                font-weight: normal;
+                                                font-size: 15px;
+                                                line-height: 17px;
+                                                text-align: left;
+                                                color: #787878;
+                                                svg {
+                                                    width: 65px;
+                                                    margin-left: 11px;
+                                                    path {
+                                                        fill: #000;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                /******end-footer******/
+                                
+                                .video-pop {
+                                    .modal-dialog.modal-dialog-centered {
+                                        max-width: 1344px;
+                                    }
+                                    .modal-body {
+                                        padding: 0;
+                                    }
+                                    button.btn.btn-secondary {
+                                        position: absolute;
+                                        background-color: unset;
+                                        padding: 0;
+                                        border: 0;
+                                        outline: navajowhite;
+                                        right: 8px;
+                                        top: 8px;
+                                    }
+                                    .video-container {
+                                        border-radius: 4px;
+                                        margin: 0 auto;
+                                        position: relative;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        box-shadow: 0px 8px 20px rgba(black, 0.4);
+                                        .video-wrapper {
+                                            width: 100%;
+                                            height: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        video {
+                                            width: 100%;
+                                            height: 73vh;
+                                            border-radius: 4px;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                    .play-button-wrapper {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: auto;
+                                        pointer-events: none;
+                                        #circle-play-b {
+                                            cursor: pointer;
+                                            pointer-events: auto;
+                                            svg {
+                                                width: 100px;
+                                                height: 100px;
+                                                fill: #DE1F1F;
+                                                stroke: #DE1F1F;
+                                                cursor: pointer;
+                                                background-color: rgba(black, 0.2);
+                                                border-radius: 50%;
+                                                opacity: 0.9;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .lg-backdrop.in {
+                                    opacity: 1;
+                                    z-index: 9999;
+                                }
+                                
+                                .lg-outer.lg-visible {
+                                    opacity: 1;
+                                    z-index: 9999;
+                                }
