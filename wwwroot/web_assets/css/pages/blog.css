@@ -1,0 +1,161 @@
+.blog {
+  /* hover state */
+}
+.blog .posts-listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.blog .post-item {
+  width: calc(33.33% - 40px);
+  margin: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+.blog .post-item__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #F7F8F8;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  color: black;
+  text-decoration: none;
+}
+.blog .post-item__thumbnail-wrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  overflow: hidden;
+  -webkit-transition: -webkit-clip-path 0.2s;
+  transition: -webkit-clip-path 0.2s;
+  transition: clip-path 0.2s;
+  transition: clip-path 0.2s, -webkit-clip-path 0.2s;
+}
+.blog .post-item__thumbnail {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.blog .post-item__thumbnail-wrapper:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(136, 27, 132, 0.2)), to(rgba(162, 77, 211, 0.03)));
+  background-image: linear-gradient(to top, rgba(136, 27, 132, 0.2), rgba(162, 77, 211, 0.03));
+}
+.blog .post-item__content-wrapper {
+  padding: 2rem;
+  position: relative;
+  height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog .post-item__title {
+  color: white;
+  line-height: 1.6;
+  margin-top: -4rem;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+.blog .post-item__title span {
+  display: inline;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a24dd3), to(#881b84));
+  background-image: linear-gradient(to right, #a24dd3, #881b84);
+  padding: 0.2rem 0.6rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.blog .post-item__metas {
+  margin-bottom: 2rem;
+}
+.blog .post-item__meta--date {
+  color: #6d6d6d;
+  letter-spacing: 0.01rem;
+  font-size: 1.4rem;
+}
+.blog .post-item__meta--category {
+  display: inline-block;
+  background-color: #a24dd3;
+  color: white;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01rem;
+  font-weight: 700;
+  padding: 2px;
+}
+.blog .post-item__excerpt {
+  margin-bottom: 2rem;
+}
+.blog .post-item__read-more-wrapper {
+  margin-top: auto;
+}
+.blog .post-item__read-more {
+  padding: 3px 0;
+  display: inline;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a24dd3), to(#a24dd3));
+  background-image: linear-gradient(#a24dd3, #a24dd3);
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: left bottom;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+.blog .post-item__inner:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.blog .post-item__inner:hover .post-item__thumbnail-wrapper {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.blog .post-item__inner:hover .post-item__thumbnail {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.blog .post-item__inner:hover .post-item__read-more {
+  background-size: 30% 2px;
+}

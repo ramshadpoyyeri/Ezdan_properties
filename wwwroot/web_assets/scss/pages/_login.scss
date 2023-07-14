@@ -1,0 +1,360 @@
+.login__page
+{
+    padding-bottom: 141px;
+    .top__bar {
+        width: 100%;
+        height: 465px;
+        background-color: #cf252e;
+        background: url(../images/b2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        z-index: -1;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background-color: rgb(207 37 46 / 83%);
+        }
+    }
+    .container
+    {
+        @media screen and (min-width:1400px) {
+            max-width: 1387px;
+        }
+        .login__box
+        {      
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: -263px;
+            .left__box {
+                width: 63%;
+                padding: 57px;
+                background-image: url(../images/l-bg.jpg);
+                background-size: cover;
+                display: flex;
+                align-items: end;
+                flex-wrap: wrap;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(180deg,rgba(0,0,0,0.34) -4%,hsl(0deg 0% 0% / 66%) 100%);
+                    top: 0;
+                }
+                .cont
+                {
+                    h3
+                    {
+                        
+                    position: relative;
+                    z-index: 9;
+                    color: #fff;
+                    font-size: 69px;
+                    width: 100%;
+                    padding-bottom: 65px;
+                    }
+                    h4{
+                        position: relative;
+                        z-index: 9;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                            
+                        a
+                        {
+                            color: #dec314;
+                            text-decoration: none;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+             
+            }
+            .right__box
+            {
+                width: 37%;
+                padding: 73px 60px 60px 60px;
+                text-align: center;
+                background: linear-gradient(296deg,rgb(222 224 221 / 85%) -4%,#e5e7e4 100%);
+                
+                top: 0;
+                h3
+                {
+                    
+                    font-size: 35px;
+                    padding-bottom: 31px;
+                    color: #2b2b2b;
+
+                }
+                .login__form
+                {
+
+                    h4
+                    {
+                        color: #2b2b2b;
+                            font-size: 26px;
+                            padding-bottom: 44px;
+                    }
+                    h5
+                    {
+                        font-size: 14px;
+                        color: #2b2b2b;
+                        font-weight: 400;
+                        padding-bottom: 34px;
+                        a
+                        {
+                            color: #2b2b2b;
+                            font-weight: 700;
+                            padding-left: 6px;
+                            text-decoration: none;
+                        }
+                    }
+                        .login-field {
+                         
+                             padding-bottom: 15px;
+
+                            &:nth-child(2) {
+                                padding-bottom: 16px;
+                            }
+                            label {
+                                font-weight: 500;
+                                font-size: 14px;
+                                text-align: left;
+                                color: #3a3a3a;
+                                width: 100%;
+                                display: block;
+                                padding-bottom: 11px;
+                  
+                            }
+                            input {
+                                height: 49px;
+                                border-radius: 6px;
+                                background: #fff;
+                                border: 1px solid rgba(74,77,84,0.2);
+                                width: 100%;
+                                padding: 16px 21px;
+                    
+                            }
+                            input::placeholder {
+                                font-weight: 300;
+                                font-size: 17px;
+                                text-align: left;
+                                color: #131621;
+                                opacity: 0.8;
+                       
+                            }
+                            input:focus-visible {
+                                border: 2px solid #cf252e !important;
+                                border-width: 1px;
+                                border-image: unset;
+                                border-style: unset;
+                                outline: unset;
+                            }
+                        }
+                        .user-know {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                            justify-content: space-between;
+                            padding-bottom: 36px;
+                            padding-top: 14px;
+                            .remember-me {
+                                label {
+                                    display: inline-block;
+                                    color: #fff;
+                                    cursor: pointer;
+                                    position: relative;
+                                    /* font-family: "AvenirNextCyr-Regular"!important; */
+                                    font-size: 15px;
+                                    text-align: left;
+                                    color: #000000;
+                                }
+                                label span {
+                                    display: inline-block;
+                                    position: relative;
+                                    background-color: transparent;
+                                    width: 25px;
+                                    height: 25px;
+                                    -webkit-transform-origin: center;
+                                    transform-origin: center;
+                                    border: 2px solid #fff;
+                                    border-radius: 0%;
+                                    vertical-align: -2px;
+                                    margin-right: 10px;
+                                    -webkit-transition: background-color 150ms 200ms, -webkit-transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+                                    transition: background-color 150ms 200ms, -webkit-transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+                                    transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+                                    transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89), -webkit-transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+                                    width: 23px;
+                                    height: 23px;
+                                    border-radius: 4px;
+                                    background: #fff;
+                                    border: 1px solid rgba(2,43,112,0.48);
+                                    vertical-align: middle;
+                                }
+                                label span:before {
+                                    content: "";
+                                    width: 0px;
+                                    height: 1px;
+                                    border-radius: 2px;
+                                    background: #fff;
+                                    position: absolute;
+                                    -webkit-transform: rotate(45deg);
+                                    transform: rotate(45deg);
+                                    top: 12px;
+                                    left: 7px;
+                                    -webkit-transition: width 50ms ease 50ms;
+                                    transition: width 50ms ease 50ms;
+                                    -webkit-transform-origin: 0% 0%;
+                                    transform-origin: 0% 0%;
+                                }
+                                label span:after {
+                                    content: "";
+                                    width: 0;
+                                    height: 1px;
+                                    border-radius: 2px;
+                                    background: #fff;
+                                    position: absolute;
+                                    -webkit-transform: rotate(305deg);
+                                    transform: rotate(305deg);
+                                    top: 15px;
+                                    left: 10px;
+                                    -webkit-transition: width 50ms ease;
+                                    transition: width 50ms ease;
+                                    -webkit-transform-origin: 0% 0%;
+                                    transform-origin: 0% 0%;
+                                }
+                                label:hover span:before {
+                                    width: 4px;
+                                    background: #cf252e;
+                                    -webkit-transition: width 150ms ease 100ms;
+                                    transition: width 150ms ease 100ms;
+                                }
+                                label:hover span:after {
+                                    width: 9px;
+                                    background: #cf252e;
+                                    -webkit-transition: width 150ms ease 100ms;
+                                    transition: width 150ms ease 100ms;
+                                }
+                                input[type=checkbox] {
+                                    display: none;
+                                }
+                                input[type=checkbox]:checked+label span {
+                                    background-color: #fff;
+                                    transform: scale(1.25);
+                                    border-color: #cf252e;
+                                }
+                                input[type=checkbox]:checked+label span:after {
+                                    width: 10px;
+                                    background: #cf252e;
+                                    transition: width 150ms ease 100ms;
+                                }
+                                input[type=checkbox]:checked+label span:before {
+                                    width: 5px;
+                                    background: #cf252e;
+                                    transition: width 150ms ease 100ms;
+                                }
+                                input[type=checkbox]:checked+label:hover span {
+                                    background-color: #fff;
+                                    transform: scale(1.25);
+                                    border-color: #cf252e;
+                                }
+                                input[type=checkbox]:checked+label:hover span:after {
+                                    width: 10px;
+                                    background: #cf252e;
+                                    transition: width 150ms ease 100ms;
+                                }
+                                input[type=checkbox]:checked+label:hover span:before {
+                                    width: 5px;
+                                    background: #cf252e;
+                                    transition: width 150ms ease 100ms;
+                                }
+                            }
+                            .forgot-p {
+                                a {
+                                    font-weight: normal;
+                                    text-decoration: underline;
+                                    font-size: 12px;
+                                    letter-spacing: 0.05em;
+                                    text-align: left;
+                                    color: #4e82d9;
+                                    text-transform: uppercase;
+                                    font-family: "AvenirNextCyr-Regular" !important;
+                                    transition: .5s ease-out;
+                                    &:hover {
+                                        color: #30599d;
+                                    }
+                                }
+                            }
+                        }
+                        .log-btn {
+                            input {
+                                width: 100%;
+                                height: 48px;
+                                background: #cf252e;
+                                border: 0;
+                                border-radius: 4px;
+                                font-size: 17px;
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                position: relative;
+                                overflow: hidden;
+                                background-position: center;
+                                -webkit-transition: 0.5s ease-out;
+                                transition: 0.5s ease-out;
+                                margin-bottom: 27px;
+                                
+                                &:hover { 
+                                    transition: .5s ease-in-out;
+                                    background: #7a171d;
+                                }
+                            }
+                        }
+                    
+                }
+                .bot_nt
+                {
+                    p
+                    {
+                        font-size: 14px;
+                            padding: 0 16px;
+                            line-height: 18px;
+                            padding-bottom: 19px;
+                            color: #535353;
+                    }
+                    a
+                    {
+                        color: #fff;
+                        text-decoration: none;
+                        background-color: #111010;
+                        width: 100%;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        padding: 21px 0;
+                        border-radius: 10px;
+                        font-weight: 700;
+                        &:hover
+                        {
+                            color: #000;
+                            background-color: #fff;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

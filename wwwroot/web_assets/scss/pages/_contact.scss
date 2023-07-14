@@ -1,0 +1,200 @@
+.contact__map
+{
+    #map
+    {
+        width: 100%;
+        height: 746px;
+    }
+ 
+}
+.inner-contact
+{
+    padding-bottom: 150px;
+    .container
+    {
+        @media screen and (min-width:1400px) {
+                max-width: 1337px;
+        }
+    }
+}
+.contact__box {
+ 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: 1px 1px 33px #bbbbbb;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: -166px;
+    position: relative;
+    z-index: 9;
+
+    .left-sec {
+        width: 34%;
+        background-color: #cf252e;
+        padding: 76px 10px 76px 86px;
+          position: relative;
+        &:after
+        {
+            
+                content: "";
+                position: absolute;
+                right: 0;
+                width: 55px;
+                height: 102%;
+                background-image: url(../images/bdr.png);
+                top: -2px;
+
+        }
+        &:before
+        {
+            content: "";
+            position: absolute;
+            right: -33px;
+            bottom: -29px;
+            height: 35%;
+            width: 43%;
+            background-image: url(../images/bg-mail.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            opacity: .1;
+        }
+
+        h3
+        {
+            font-size: 35px;
+            color: #fff;
+            padding-bottom: 33px;
+            font-weight: 500;
+        }
+        ul
+        {
+            li
+            {
+                padding-bottom: 20px;
+                a
+                {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 400;
+
+                    svg
+                    {
+                        width: 17px;
+                        margin-right: 13px;
+                        height: 23px;
+                        path
+                        {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .social {
+            padding-top: 60px;
+            display: flex;
+            gap: 10px;
+            a
+            {
+                transition: .5s ease-out;
+               svg
+               {
+                width: 21px;
+                height: 16px;
+            
+                   path
+                   {
+                       fill: #fff;
+
+                   }
+                   g
+                   {
+                       fill: #fff;
+                       
+                   }
+               }
+               &:hover
+               {
+                   transform: scale(1.2);
+               }
+            }        
+    }
+   
+}
+.right-sec {
+    width: 66%;
+    padding: 83px 128px 79px 59px;
+    background-color: #fff;
+    h3
+    {
+        font-size: 38px;
+        font-weight: 700;
+        padding-bottom: 53px;
+        color: #252525;
+    }
+    form
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        position: relative;
+        .fld
+        {
+            width: 47%;
+
+            label
+            {
+                width: 100%;
+                padding-bottom: 12px;
+                color: #747e8c;
+                font-size: 19px;
+            }
+            input
+            {
+                width: 100%;
+                border: 0;
+                border-bottom: 2px solid #ebebeb;
+                outline: none;
+                color: #1d2a3b;
+                font-weight: 600;
+                padding-bottom: 10px;
+            }
+            
+            &.full
+            {
+                width: 100%;
+                 textarea
+                 {
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 2px solid #ebebeb;
+                    outline: none;
+                    color: #1d2a3b;
+                    font-weight: 600;
+                    height: 30px;
+                 }
+            }
+
+        }
+        button
+        {
+            position: absolute;
+            bottom: -23px;
+            right: -63px;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background-color: #fff;
+            transition: .5s ease-out;
+            &:hover
+            {
+                background-color: #000;
+            }
+        }
+
+    }
+} 
+}

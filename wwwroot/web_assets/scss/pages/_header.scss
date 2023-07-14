@@ -1,0 +1,458 @@
+.header {
+    padding: 0px 113px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    &.inner-header {
+        background-color: #fff;
+        border-bottom: 1px solid #e1e1e1;
+        .header__nav {
+            .header__menu {
+                .header__col {
+                    ul {
+                        li {
+                            &.settings {
+                                a {
+                                    background-color: rgb(126 126 126 / 42%);
+                                    svg {
+                                        path {
+                                            stroke: #343434;
+                                        }
+                                    }
+                                }
+                            }
+                            &.login__link {
+                                svg {
+                                    path {
+                                        fill: #343434;
+                                    }
+                                }
+                            }
+                            a {
+                                color: #3e3e3e;
+                                &.contact__menu {
+                                    padding: 14px 27px;
+                                    background: #fe3f59;
+                                    border: 1px solid #fe3f59;
+                                    background-color: rgba(255, 255, 255, 0.42);
+                                    border-radius: 50px;
+                                    text-transform: capitalize;
+                                    color: #fe3f59;
+                                }
+                                &.active {
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        height: 2px;
+                                        width: 50%;
+                                        right: 0;
+                                        background-color: #b3b2b2;
+                                        bottom: -13px;
+                                        transition: .5s ease-out;
+                                    }
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        height: 2px;
+                                        width: 50%;
+                                        left: 0;
+                                        background-color: #b3b2b2;
+                                        bottom: -13px;
+                                        transition: .5s ease-out;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // @include for-desktop {
+    //     padding: 0px 0px;
+    //     position: static;
+    // }
+    @include for-larg-desktop {
+        padding: 0 52px;
+    }
+    @media screen and (min-width:1200px) {
+        &.header_scroll {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.86);
+            opacity: 0;
+            height: 0 !important;
+            transition: .5s ease-out;
+            .header__col ul li a {
+                color: #ffffff!important;
+            }
+            // .header__menu {
+            //     padding-top: 28px !important;
+            //     padding-bottom: 29px !important;
+            // }
+            .header__logo {
+                padding-top: 0px !important;
+                img {
+                    width: 60px !important;
+                }
+            }
+            .header__menu .header__col ul li a.contact__menu {
+                color: #fff !important;
+            }
+        }
+        .header__nav {
+            padding-top: 11px;
+            padding-bottom: 11px;
+        }
+    }
+    .header__logo {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 87px;
+        }
+        @include for-desktop {
+            position: static;
+            justify-content: left;
+            padding-left: 35px;
+            img {
+                width: 87px;
+            }
+        }
+        @include for-desktop {
+            padding-top: 9px;
+            padding-bottom: 9px;
+            img {
+                width: 90px;
+            }
+        }
+    }
+    .header__nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 11px;
+        @include for-desktop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ham-btn {
+            display: none;
+            position: relative;
+            z-index: 999;
+            cursor: pointer;
+            span {
+                width: 28px;
+                height: 3px;
+                display: block;
+                background-color: #000;
+                margin-bottom: 5px;
+                position: relative;
+                border: 1px solid #fff;
+            }
+            @include for-desktop {
+                display: block;
+                padding-right: 35px;
+                &.active {
+                    span {
+                        &:first-child {
+                            transform: rotate(42deg);
+                            top: 6px;
+                        }
+                        &:nth-child(2) {
+                            transform: translate(-35px, 0px);
+                            opacity: 0;
+                        }
+                        &:nth-child(3) {
+                            transform: rotate(140deg);
+                            height: 27p;
+                            top: -10px;
+                        }
+                    }
+                }
+            }
+        }
+        .header__menu {
+            display: flex;
+            justify-content: space-between;
+            z-index: 99;
+            position: relative;
+            align-items: center;
+            @include for-desktop {
+                position: absolute;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                /* bottom: 0; */
+                width: 100%;
+                top: 100%;
+                display: block;
+                background: linear-gradient(180deg, #000 22%, #926248 79%);
+                padding-top: 0;
+                padding-bottom: 0;
+                transform: scaleY(0);
+                overflow: hidden;
+                opacity: 0;
+                &.active {
+                    background: linear-gradient(180deg, #000000e0 22%, #000000d1 79%);
+                    padding-top: 17px;
+                    padding-bottom: 14px;
+                    overflow: visible;
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+            }
+            .header__col {
+                &.header__log {
+                    padding-left: 70px;
+                    @include for-laptop {
+                        padding-left: 49px;
+                    }
+                    @include for-larg-desktop {
+                        padding-left: 52px;
+                    }
+                    @include for-desktop {
+                        padding-left: 0px;
+                    }
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    @include for-laptop {
+                        gap: 19px;
+                        li {
+                            a {
+                                font-size: 13px !important;
+                            }
+                        }
+                    }
+                    @include for-larg-desktop {
+                        gap: 13px;
+                        li {
+                            a {
+                                font-size: 14px !important;
+                            }
+                        }
+                    }
+                    @include for-desktop {
+                        flex-wrap: wrap;
+                        gap: 0;
+                        li {
+                            width: 100%;
+                            a {
+                                padding: 11px 19px;
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+                    }
+                    li {
+                        &.login__link {
+                            svg {
+                                width: 12px;
+                                margin-right: 12px;
+                            }
+                            a {
+                                text-transform: capitalize;
+                            }
+                        }
+                        &.lang {
+                            svg {
+                                width: 44px;
+                                margin-right: 6px;
+                                height: 24px;
+                                border-radius: 4px;
+                            }
+                            a {
+                                text-transform: capitalize;
+                            }
+                        }
+                        &.settings {
+                            a {
+                                background-color: rgb(255 255 255 / 42%);
+                                /* padding: 14px; */
+                                border-radius: 50%;
+                                width: 46px;
+                                height: 46px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                @include for-laptop {
+                                    width: 43px;
+                                    height: 43px;
+                                }
+                                svg {
+                                    width: 20px;
+                                }
+                            }
+                        }
+                        a {
+                            font-weight: 600;
+                            font-size: 14px;
+                            letter-spacing: 0.1em;
+                            line-height: 20px;
+                            text-align: left;
+                            color: #fff;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                height: 2px;
+                                width: 0%;
+                                right: 0;
+                                background-color: $white;
+                                bottom: -13px;
+                                transition: .5s ease-out;
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                height: 2px;
+                                width: 0%;
+                                left: 0;
+                                background-color: $white;
+                                bottom: -13px;
+                                transition: .5s ease-out;
+                            }
+                            &:hover {
+                                color: #ff9caa;
+                                &::after {
+                                    width: 50%;
+                                    background-color: #ff9caa;
+                                }
+                                &::before {
+                                    width: 50%;
+                                    background-color: #ff9caa;
+                                }
+                            }
+                            &.active {
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    height: 2px;
+                                    width: 50%;
+                                    right: 0;
+                                    background-color: $white;
+                                    bottom: -13px;
+                                    transition: .5s ease-out;
+                                }
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    height: 2px;
+                                    width: 50%;
+                                    left: 0;
+                                    background-color: $white;
+                                    bottom: -13px;
+                                    transition: .5s ease-out;
+                                }
+                            }
+                            &.contact__menu {
+                                padding: 14px 27px;
+                                background: #926248;
+                                border: 0px solid #926248;
+                                background-color: rgba(255, 255, 255, 0.42);
+                                border-radius: 50px;
+                                text-transform: capitalize;
+                                &.f-map {
+                                    background-color: #fe3f59;
+                                    color: #fff;
+                                }
+                                &::after {
+                                    content: none;
+                                }
+                                &::before {
+                                    content: none;
+                                }
+                                &:hover {
+                                    color: #fff;
+                                    border: 0px solid $white;
+                                    background: $bg-dark;
+                                }
+                                @include for-laptop {
+                                    padding: 12px 11px !important;
+                                }
+                                @include for-desktop {
+                                    padding: 11px 19px;
+                                    background: unset;
+                                    border: none;
+                                    &::after {
+                                        content: "";
+                                    }
+                                    &::before {
+                                        content: "";
+                                    }
+                                    &:hover {
+                                        color: $white;
+                                        border: 0px solid $white;
+                                        background: unset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: .5s ease-in-out;
+    z-index: 999999;
+    &:hover {
+        bottom: 30px;
+    }
+    img {
+        width: 101px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+}
+
+.btn-whatsapp-pulse-border {
+    bottom: 154px;
+    right: 20px;
+    animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 25px;
+    border: 5px solid #25d366;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+    0% {
+        padding: 25px;
+        opacity: 0.75;
+    }
+    75% {
+        padding: 50px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
